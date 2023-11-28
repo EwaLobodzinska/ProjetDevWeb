@@ -1,0 +1,212 @@
+<html>
+<head>
+	<title> Portfolio </title>
+	<style>
+		
+		body{
+			background-color: #f2f9ed; /*#F8FFFF;*/
+			font-family: Garamond;
+			font-size: 20px;
+		}
+		
+		.frontPage {
+			width: 100%;
+			height: 100%;
+			background: url("VanGogh.jpg") fixed;
+			position: relative;
+			text-align: center;	
+			color: white;
+		}
+
+		.image{
+			opacity:0.8;
+			width: 100%;
+			height: 100%;
+		} 
+		
+		.menu{
+			text-align: right;
+			position: absolute;
+			top: 8px;
+			right: 16px;
+			padding: 10px;
+			background-color: black;
+			opacity: 0.7;  /* transparency */
+			border-radius: 10px;
+		}
+		
+		.Bienvenue {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			padding: 10px 20px 20px;
+			background-color: black;
+			opacity: 0.5;  /* transparency */
+			border-radius: 10px;
+		}
+		.Bienvenue h1{
+			opacity: 0.9;
+		}
+
+		.column {
+		  float: left;
+		} 
+		.left{
+		  width: 80%;
+		}
+		.right{
+			width: 30%;
+			padding-left: 40px
+		}
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+		
+		
+		p, ul, table{
+			background: #eeedf9; 
+			padding: 20px;
+			border: 1px blue solid;
+			border-radius: 10px;
+			list-style-position: inside;
+		}
+		
+		
+		table{
+			width: 700px;
+			text-align: center;
+			border-spacing: 15px;
+		}
+		
+		.drapeaux{
+			border-radius: 15px;
+			width: 100%;
+			height: 100;
+			width: 150;
+		}
+		
+		.list_square{
+			list-style-type: square;
+		}
+			
+		.diplomes_list {
+			list-style-type: circle;
+		}
+		
+
+			 
+
+	</style>
+</head>
+<body> 
+	
+	<div class="frontPage">
+		<!-- <img class="image" src="C:\Users\DELL\Documents\Ewa\Studia\Developpement_web\Portfolio\VanGogh.jpg"> -->
+		<div class="menu">
+			<h4><span> Apropos </span>
+			<span> Projets </span>
+			<span> Diplomes </span>
+			<span> Contact </span></h4>
+		</div>
+		<div class="Bienvenue"> 
+			<h1> Ewa Łobodzińska </h1>
+			<h4> Etudiante en L2 MIASHS renforcement informatique </h4>
+			<a href="C:\Users\DELL\Documents\Ewa\CV_Łobodzińska.pdf" download> telecharger mon CV :) </a>
+		</div>
+	</div> 
+	
+	<h2> A propos </h2>
+		<h3> Présentation   </h3>
+		<p> Actuellement étudiante en deuxième année de licence MIASHS avec un renforcement en informatique, mon objectif est d'intégrer un master MIAGE afin d'approfondir mes compétences 
+		et connaissances dans le domaine de l'informatique. Ma volonté d'évolution se concrétise par l'acquisition d'une expérience pratique à travers des stages, des périodes en alternance, ainsi que 
+		la participation à des projets concrets. Je suis déterminée à enrichir mon parcours académique par une mise en pratique régulière, consolidant ainsi mes aptitudes professionnelles et ma compréhension
+		approfondie des enjeux informatiques contemporains.  </p>
+		<h3> Compétences </h3>
+		<ul>
+			<li> <b>Python</b> - des bases de langage de programmation Python; 
+			<br> création et utilisation des différents fonctions; utilisation des boucles for, while mais aussi des conditions if, elif, else, utilisation des listes, ensembles, dictionnaires. 
+			<br> Exemples des fonctions: nombres paires et impaires, travail sur les matrices, travail sur des fichiers (ajout du texte)
+			<br> Création d'un jeu simple dans le terminal</li>
+			<li> <b> Java </b> - des bases de langage de programmaion Java;
+			<li> <b>HTML </b> - des bases de la création d'une site web avec HTML; 
+			<br> ajouter des photos, liens, création des tableaux, listes, apparence de la site web. 
+			<li> <b> CSS </b> - des bases de la mise au jour avec CSS; 
+			<br> changement des couleurs des polices, de fond, manipulation des bordures, aligner du textes, changement de grandeur du texte, images </li>
+			<li> <b> JavaScript </b> - des bases de langage de programmation JavaScript;
+		</ul>
+		<div class="row">
+		<div class="column">
+			<h3> Langues </h3>
+				<table> 
+					<tr> 
+						<td> <img class="drapeaux" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/220px-Flag_of_Poland.svg.png">
+						<td> <img class="drapeaux" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAACHCAMAAADXwM4PAAAAYFBMVEXIEC7///8BIWnYV2z43+PPMErut8Djh5b99/jS2OWzvdIeOnoZNneirsjY3ehGXZI+Vo309fmAkLQHJm1wgqrKFzXrp7LNJD/nl6T77/Hgd4jTP1fcZ3rURV3zy9H00ddyXc5nAAAEFUlEQVR4nO2d2XLaQBBFh3jPauItjhP7//8yZUQUNJt6uXcgVX2fXAam57SOEWgZp7PzTSNfv31wZR4otTM/x1fq9mY/zONTVuDiMqWHq+sW48dP/wXh5y/7Qd5+Z8O/s02cLcTt97uTJ7y7305DPP/MR9/5efAjWtUxhD1BD6szVB1B2Bd0WR2vKp9wTdC8OlpVOuGqoEV1sKpkwlnQ15ds0CVHm30Zg6pUQpGg1epAVZmEMkGn6v1NvIhSVR6hVNCpuqALc7b3GlVZhHJB94TCJ07RqEoiVAj6l7C3uywjV5VCKNjF1wjF/XiP+F2VQKgUdKquf8nm5vZIhFpBdxsk6Tf7RqgqmtA402TsjEBVLKFF0N0bY/K8eCChfTMkjwDDCD3zS+4e8Ql9jiXMMExCZ/PTv5HQqmII3bNKh6NhVUUQAsxK6AGhhIiWp2xMoKpuQsxcckKgqk5ClE8lIWxoHyGs0RVClB4eQuAfS5UQ00E7IfQNr0GIKGImxO60WoQAUYyE6A8ebUJ3L02E+A+PPUJnOQsh4QtAl9CnjJ6Q8iVuhdDTVS0h6Yv4KqG9sJKQdTBlndAsj4qQd0BMQmjsr4qQIqiC0KaqhlDfQOmBaSGhUVUdIefkgpjQpqqCkHWCSEFoVlVEyBBUTWhVVUJIEdRAaFNVQpj9HniyPX83Y0RCSKw+okYQcquPqBGE3OojagQht/qIGkF4rOqRSCQSiUQikUgkEolEIpFIJBKJRE4rxz1zMKL6iBpByK0+okYQcquPqBGE3OojagQht7r12sQi52et2RsILy+yJz792D+ivzZR9ez5+tIi11cP2ZxePIS18V73DxGvL52vEdb03EhYcSL9ep4eoV0jrBB0noyDEKWq/lr9Ih2hfIQYVbX3W2g67SaEqKq8Z0YzBRWhoYHAe2ZMglrve9LVgBCaBPXcu1bEp6r8/kN1YSWhvZUuQo88WkJfNRuhr6t6Qoqqonu5beUshARVBffjFxEqYyLEq7q6poK9l0ZCtKpr62I4ipgJsar21zYpohHFTghVtbc+jbODHkKgqp01hrxD+whhjW6uE1VErYeTEDWXxlpfzr5hCDE+1ddrcwwIJUS0vLbmXhHbrhZBCJhVuW6ivVsUQrdZxdqXtmGYhM7mZ+uXFnF8bYER+ua3WIPW1KMRhB7HEu/wAZTQvhkS7xAQltCsajJ05vjreRfp2NY6Jgs4FIsnNKlaJ4QcTicQWlStEmJOiVAI9apWCDuCntb/t5BtmoIQd2qSRahUNScEnl7mEepUXXnYdt6VTqhRtb+JjYLyCRWqttkdgo4gFKta/eUuDkHHEApVrW7Y5BR0EKFM1Zx4ilPQYYQSVTcMQQcSrqtKEXQk4aqqpaCPfkHHEvZV/QPzY7HaZZwqzgAAAABJRU5ErkJggg==">
+						<td> <img class="drapeaux" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAACWCAMAAAAfSh8xAAAACVBMVEUAJlT////OESaBoDijAAAAoUlEQVR4nO3PMQEAAAgDoGn/0IZwJzQg6Zme7SkGDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDR8OvdOD1wQ8tBkAAAAASUVORK5CYII=">
+						<td> <img class="drapeaux" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/220px-Flag_of_Spain.svg.png" >
+					</tr>
+					<tr>
+						<td> Polonais </td>
+						<td> Anglais </td>
+						<td> Français  </td>
+						<td> Espagnol </td>
+					</tr>
+					<tr>
+						<td> Langue Maternelle </td>
+						<td> Niveau C1 </td>
+						<td> Niveau B2 </td>
+						<td> Débutante  </td>
+					</tr>
+						
+				</table>
+		</div>
+		<div class="column">
+			<h3> Soft Skills </h3>
+			<ul>
+				<li class="list_square"> Autonomie </li>
+				<li class="list_square"> Esprit d'équipe </li>
+				<li class="list_square"> Ponctualité </li>
+				<li class="list_square"> Curiosité </li>
+				<li class="list_square"> Résolution des problèmes </li>
+				<li class="list_square"> Créativité </li>
+			</ul>
+		</div>
+		</div>
+		
+	<h2> Projets </h2>
+		<h3> Jeu en Python </h3>
+		<h3> Recuperation des donnes d'une site web et analyse avec Java </h3>
+	
+	<h2> Diplômes </h2>
+		<h3> Education </h3>
+		<ul class="diplomes_list">
+			<li> <b> 2022- maintenant: </b> Etudiante en MIASHS (Mathématiques et Informatiques Appliques en sciences humaines et sociales) 
+			à Université Paris 1 Panthéon-Sorbonne </li>
+			<li> <b> Janvier 2023: </b> Certification PIX </li>
+			<li> <b> Mai 2022: </b> Bacculerat </li>
+			<li> <b> 2019-2022: </b> II Lycée d'Adam Mickiewicz avec des départements bilingues à Gdynia, Pologne
+			<br> Profil bilingue avec la spécialité en mathématiques, physiques et géographie </li>
+		</ul>
+		<h3> Experience </h3>
+		<ul class="diplomes_list">
+			<li> <b> L'été 2021 et 2022: </b> Assistante dans l'entreprise Elektro-Plus à Gdynia. 
+			<br> L'expérience ou j'avais pour la tâche d'organiser et de mettre à jour les archives. En plus, j’aidais au travail 
+			de bureau et dans tenue de livre compte ou j'ai appris des bases.   </li> <br>
+			<li> <b> 2015-2020: </b> Scoute, responsable de groupe des filles.
+			<br> Après  gagner l'expérience et connaissances en scoutisme je devenais une responsable de groupe de 6 filles. 
+			Je me suis occupée d'organisation des rencontres chaque semaine en manière intéressante et éducative. J'étais responsable 
+			de partager tout ce que je sais et encore plus dans les aspects d'histoire de scoutisme mais aussi d'histoire générale, 
+			des symboles cruciaux. Mon but était de développer des compétences générales de mon groupe.  </li>
+		</ul>
+		
+	<h2> Contact </h2>
+		<ul> 
+		<li> <a href= https://www.linkedin.com/in/ewa-lobodzinska-435180268/> Linkedin </a> </li>
+		<li> &#9742; Mon numéro de téléphone: +33 6 05 38 22 77 </li>
+		<li> &#9993; Mon e-mail: e.m.lobodzinska@gmail.com </li>
+		</ul>
+	
+</body>
+</html>
