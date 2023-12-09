@@ -74,11 +74,31 @@
 		}
 
 		
-			
+		h2{
+			padding-top:20px;
+			border-top: 2px inset blue;	
+		}
+	
 		
 		
 		
 		/* The grid: Three equal columns that floats next to each other */
+		.row{
+			margin-left:25%;
+		} 
+
+		aside {
+			width: 25%;
+			float: left;
+		}
+
+		aside img{
+			width: 250px;
+			height: 270px;
+			margin-left: 20px;
+			border-radius: 200px;
+		} 
+
 		.column {
 		  float: left;
 		  width: 25%;
@@ -95,9 +115,14 @@
 			display: none;
 			background: #eeedf9; 
 			padding: 20px;
-			border: 1px blue solid;
+			border: 1.2px solid #0000ab;
 			border-radius: 10px;
+			margin-left: 25%;
 		}
+
+		#b1 {
+			display:block;
+		} 
 
 		/* Clear floats after the columns */
 		.row:after {
@@ -109,24 +134,13 @@
 		/* Closable button inside the image */
 		.closebtn {
 		  float: right;
-		  color: white;
+		  color: black;
 		  font-size: 35px;
 		  cursor: pointer;
 		}
 		
 		
-		
-		
-		.pageBorder p, table{
-			background: #eeedf9; 
-			padding: 20px;
-			border: 1px blue solid;
-			border-radius: 10px;
-			list-style-position: inside;
-		}
-		
-		
-		table{
+		.langues{
 			width: 700px;
 			text-align: center;
 			border-spacing: 15px;
@@ -143,11 +157,57 @@
 			list-style-type: square;
 		}
 			
-		.diplomes_list {
-			list-style-type: circle;
+		.diplomes{
+			background-color:#f3f2fa;
+		} 
+		
+		.diplomes_table{
+			width: 90%;
+			font-family: Garamond;
+			font-size: 20px;
+			margin-left: 5%;
+			margin-right: 5%;
+			text-align:center;
+		
 		}
 		
-
+		
+		.icon{
+			width: 20%;
+			vertical-align: bottom;
+			text-align: center;
+		}	
+		.date{
+			vertical-align:top;
+		
+		}
+		
+		.text_left{
+			width: 40%;
+			padding: 30px;
+			text-align: center;
+			border-radius: 10px;
+			background-color:#e7f4e3;
+			border: 1.2px solid #0000ab;
+			
+		}	
+		.text_right{
+			width: 40%;
+			padding: 30px;
+			text-align: center;
+			border-radius: 15px;
+			background-color:  #e7f4e3;
+			border: 1.2px solid #0000ab;
+		}
+		
+		.text_experience{
+			width: 60%;
+			padding: 30px;
+			text-align: center;
+			border-radius: 15px;
+			background-color: #e7f4e3;
+			border: 1.2px solid #0000ab;
+		}
 			 
 
 	</style>
@@ -179,6 +239,7 @@
 	  <div class="column" onclick="openTab('b4');" >Soft Skills</div>
 		</div>
 		<!-- The expanding grid (hidden by default) -->
+		<aside> <img src="IMG_2651.jpg"> </aside>
 		<div id="b1" class="containerTab" >
 		  <!-- If you want the ability to close the container, add a close button -->
 		  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
@@ -260,31 +321,81 @@
 		</form> 
 		</div> 
 		
+	<div class="diplomes">
+	<h2> Diplômes </h2>
+		<h3> Education </h3>
+		<table class="diplomes_table">
+		<tr>
+			<td rowspan="2"></td>
+			<td class="icon">&#9728;</td>
+			<td class="text_right" rowspan="2"> <b>Licence MIASHS </b> <p> Licence Mathématiques et Informatiques Appliques en sciences humaines et sociales </p>
+			<p> Université Paris 1 Panthéon-Sorbonne </p></td>
+		</tr>
+		<tr>
+			<td class="date"> <b> 2022 - 2025 </b> </td>
+		</tr>
+		<tr>
+			<td class="text_left" rowspan="2"> <p> Certification PIX </p> </td>
+			<td class="icon">&#9728;</td>
+			<td rowspan="2"></td>
+		</tr>
+		<tr>
+			<td class="date"> <b> Janvier 2023 </b> </td>
+		</tr>
+		<tr>
+			<td rowspan="2"></td>
+			<td class="icon">&#9728;</td>
+			<td class="text_right" rowspan="2">Baccalaureat </td>
+		</tr>
+		<tr>
+			<td class="date"> <b> Mai 2022 </b> </td>
+			
+		</tr>
+		<tr>
+			<td class="text_left" rowspan="2"> <p> II Lycée d'Adam Mickiewicz avec des départements bilingues à Gdynia, Pologne </p>
+			<p> Profil bilingue avec la spécialité en mathématiques, physiques et géographie </p> </td>
+			<td class="icon">&#9728;</td>
+			<td rowspan="2"></td>
+		</tr>
+		<tr>
+			<td class="date" rowspan="2"> <b> 2019 - 2022 </b> </td>
+		</tr>
+		</table>
+		<h3> Experience </h3>
+		<table class="diplomes_table">
+		<tr>
+			<td rowspan="2"></td>
+			<td class="icon">&#9728;</td>
+			<td class="text_experience" rowspan="2"> <b>Assistante dans l'entreprise Elektro-Plus à Gdynia. </b>
+			<p> L'expérience ou j'avais pour la tâche d'organiser et de mettre à jour les archives. En plus, j’aidais au travail 
+			de bureau et dans tenue de livre compte ou j'ai appris des bases.  </p> </td>
+		</tr>
+		<tr>
+			<td class="date"> <b> L'été 2021 et 2022 </b> </td>
+		</tr>
+		<tr height="10px"> </tr>
+		<tr>
+			<td rowspan="2"></td>
+			<td class="icon">&#9728;</td>
+			<td class="text_experience" rowspan="2"> <b>Scoute, responsable de groupe des filles.</b>
+			<p> Après  gagner l'expérience et connaissances en scoutisme je devenais une responsable de groupe de 6 filles. 
+			Je me suis occupée d'organisation des rencontres chaque semaine en manière intéressante et éducative. J'étais responsable 
+			de partager tout ce que je sais et encore plus dans les aspects d'histoire de scoutisme mais aussi d'histoire générale, 
+			des symboles cruciaux. Mon but était de développer des compétences générales de mon groupe. </p> </td>
+		</tr>
+		<tr>				
+
+			<td class="date"> <b> 2015 - 2020 </b> </td>
+			
+
+		</tr>
+		</table>
+		<br>
+	</div>
+
 	<h2> Projets </h2>
 		<h3> Jeu en Python </h3>
 		<h3> Recuperation des donnes d'une site web et analyse avec Java </h3>
-	
-	<h2> Diplômes </h2>
-		<h3> Education </h3>
-		<ul class="diplomes_list">
-			<li> <b> 2022- maintenant: </b> Etudiante en MIASHS (Mathématiques et Informatiques Appliques en sciences humaines et sociales) 
-			à Université Paris 1 Panthéon-Sorbonne </li>
-			<li> <b> Janvier 2023: </b> Certification PIX </li>
-			<li> <b> Mai 2022: </b> Bacculerat </li>
-			<li> <b> 2019-2022: </b> II Lycée d'Adam Mickiewicz avec des départements bilingues à Gdynia, Pologne
-			<br> Profil bilingue avec la spécialité en mathématiques, physiques et géographie </li>
-		</ul>
-		<h3> Experience </h3>
-		<ul class="diplomes_list">
-			<li> <b> L'été 2021 et 2022: </b> Assistante dans l'entreprise Elektro-Plus à Gdynia. 
-			<br> L'expérience ou j'avais pour la tâche d'organiser et de mettre à jour les archives. En plus, j’aidais au travail 
-			de bureau et dans tenue de livre compte ou j'ai appris des bases.   </li> <br>
-			<li> <b> 2015-2020: </b> Scoute, responsable de groupe des filles.
-			<br> Après  gagner l'expérience et connaissances en scoutisme je devenais une responsable de groupe de 6 filles. 
-			Je me suis occupée d'organisation des rencontres chaque semaine en manière intéressante et éducative. J'étais responsable 
-			de partager tout ce que je sais et encore plus dans les aspects d'histoire de scoutisme mais aussi d'histoire générale, 
-			des symboles cruciaux. Mon but était de développer des compétences générales de mon groupe.  </li>
-		</ul>
 		
 	<h2> Contact </h2>
 		<ul> 
