@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title> Portfolio </title>
+	<script src="Portfolio.js"> </script> 
 	<style>
 		
 		body{
@@ -22,51 +23,101 @@
 			opacity:0.8;
 			width: 100%;
 			height: 100%;
+			object-fit: cover;
 		} 
 		
-		.menu{
-			text-align: right;
-			position: absolute;
-			top: 8px;
-			right: 16px;
-			padding: 10px;
-			background-color: black;
-			opacity: 0.7;  /* transparency */
-			border-radius: 10px;
+		
+		
+		.menu ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
 		}
 		
+
+		.menu li{
+			float:left;
+		}
+
+		.menu a{
+			display: block;
+			padding: 8px;
+			background: rgb(0,0,0, 0.7);  /* transparency */
+		}
+		.menu li a{
+			display: block;
+			padding: 14px 16px;
+			text-align: center;
+			text-decoration: none;
+			color:white;
+		}
+
+		.menu li a:hover{
+			background-color: transparent;
+		}
+		
+		
+		
+	
 		.Bienvenue {
 			position: absolute;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 			padding: 10px 20px 20px;
-			background-color: black;
-			opacity: 0.5;  /* transparency */
+			background: rgb(0,0,0,0.6);  /* transparency */
 			border-radius: 10px;
 		}
-		.Bienvenue h1{
-			opacity: 0.9;
+		.Bienvenue a {
+			color: white;
 		}
 
+		
+			
+		
+		
+		
+		/* The grid: Three equal columns that floats next to each other */
 		.column {
 		  float: left;
-		} 
-		.left{
-		  width: 80%;
+		  width: 25%;
+		  text-align: center;
+		  font-size: 25px;
+		  cursor: pointer;
+		  color: black;
+		  padding-bottom: 15px;
+
 		}
-		.right{
-			width: 30%;
-			padding-left: 40px
+
+		.containerTab {
+			color: black;
+			display: none;
+			background: #eeedf9; 
+			padding: 20px;
+			border: 1px blue solid;
+			border-radius: 10px;
 		}
+
+		/* Clear floats after the columns */
 		.row:after {
 		  content: "";
 		  display: table;
 		  clear: both;
 		}
+
+		/* Closable button inside the image */
+		.closebtn {
+		  float: right;
+		  color: white;
+		  font-size: 35px;
+		  cursor: pointer;
+		}
 		
 		
-		p, ul, table{
+		
+		
+		.pageBorder p, table{
 			background: #eeedf9; 
 			padding: 20px;
 			border: 1px blue solid;
@@ -104,42 +155,60 @@
 <body> 
 	
 	<div class="frontPage">
-		<!-- <img class="image" src="C:\Users\DELL\Documents\Ewa\Studia\Developpement_web\Portfolio\VanGogh.jpg"> -->
 		<div class="menu">
-			<h4><span> Apropos </span>
-			<span> Projets </span>
-			<span> Diplomes </span>
-			<span> Contact </span></h4>
-		</div>
+			<ul>
+				<li> <a href="apropos.html"> A propos </a> </li>
+				<li> <a href="diplomes.html"> Diplômes  </a> </li>
+				<li> <a href="projets.html"> Projets </a> </li>
+				<li> <a href="contact.html"> Contact </a> </li>
+			</ul> 
+		</div>	
 		<div class="Bienvenue"> 
 			<h1> Ewa Łobodzińska </h1>
 			<h4> Etudiante en L2 MIASHS renforcement informatique </h4>
-			<a href="C:\Users\DELL\Documents\Ewa\CV_Łobodzińska.pdf" download> telecharger mon CV :) </a>
+			<a href="C:\Users\DELL\Documents\Ewa\CV_Łobodzińska.pdf" download> telecharger mon CV ici :) </a>
 		</div>
 	</div> 
 	
+	<div class="APropos">
 	<h2> A propos </h2>
-		<h3> Présentation   </h3>
+	<div class="row">
+	  <div class="column" onclick="openTab('b1');" >Presentation</div>
+	  <div class="column" onclick="openTab('b2');" >Competences</div>
+	  <div class="column" onclick="openTab('b3');" >Langues</div>
+	  <div class="column" onclick="openTab('b4');" >Soft Skills</div>
+		</div>
+		<!-- The expanding grid (hidden by default) -->
+		<div id="b1" class="containerTab" >
+		  <!-- If you want the ability to close the container, add a close button -->
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		  <h3> Présentation   </h3>
 		<p> Actuellement étudiante en deuxième année de licence MIASHS avec un renforcement en informatique, mon objectif est d'intégrer un master MIAGE afin d'approfondir mes compétences 
 		et connaissances dans le domaine de l'informatique. Ma volonté d'évolution se concrétise par l'acquisition d'une expérience pratique à travers des stages, des périodes en alternance, ainsi que 
 		la participation à des projets concrets. Je suis déterminée à enrichir mon parcours académique par une mise en pratique régulière, consolidant ainsi mes aptitudes professionnelles et ma compréhension
 		approfondie des enjeux informatiques contemporains.  </p>
-		<h3> Compétences </h3>
-		<ul>
-			<li> <b>Python</b> - des bases de langage de programmation Python; 
-			<br> création et utilisation des différents fonctions; utilisation des boucles for, while mais aussi des conditions if, elif, else, utilisation des listes, ensembles, dictionnaires. 
-			<br> Exemples des fonctions: nombres paires et impaires, travail sur les matrices, travail sur des fichiers (ajout du texte)
-			<br> Création d'un jeu simple dans le terminal</li>
-			<li> <b> Java </b> - des bases de langage de programmaion Java;
-			<li> <b>HTML </b> - des bases de la création d'une site web avec HTML; 
-			<br> ajouter des photos, liens, création des tableaux, listes, apparence de la site web. 
-			<li> <b> CSS </b> - des bases de la mise au jour avec CSS; 
-			<br> changement des couleurs des polices, de fond, manipulation des bordures, aligner du textes, changement de grandeur du texte, images </li>
-			<li> <b> JavaScript </b> - des bases de langage de programmation JavaScript;
-		</ul>
-		<div class="row">
-		<div class="column">
-			<h3> Langues </h3>
+		</div>
+
+		<div id="b2" class="containerTab" >
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		  <h3> Compétences </h3>
+			<ul>
+				<li> <b>Python</b> - des bases de langage de programmation Python; 
+				<br> création et utilisation des différents fonctions; utilisation des boucles for, while mais aussi des conditions if, elif, else, utilisation des listes, ensembles, dictionnaires. 
+				<br> Exemples des fonctions: nombres paires et impaires, travail sur les matrices, travail sur des fichiers (ajout du texte)
+				<br> Création d'un jeu simple dans le terminal</li>
+				<li> <b> Java </b> - des bases de langage de programmaion Java;
+				<li> <b>HTML </b> - des bases de la création d'une site web avec HTML; 
+				<br> ajouter des photos, liens, création des tableaux, listes, apparence de la site web. 
+				<li> <b> CSS </b> - des bases de la mise au jour avec CSS; 
+				<br> changement des couleurs des polices, de fond, manipulation des bordures, aligner du textes, changement de grandeur du texte, images </li>
+				<li> <b> JavaScript </b> - des bases de langage de programmation JavaScript;
+			</ul>
+		</div>
+
+		<div id="b3" class="containerTab" >
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		  <h3> Langues </h3>
 				<table> 
 					<tr> 
 						<td> <img class="drapeaux" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/220px-Flag_of_Poland.svg.png">
@@ -162,8 +231,11 @@
 						
 				</table>
 		</div>
-		<div class="column">
-			<h3> Soft Skills </h3>
+		
+		
+		<div id="b4" class="containerTab" >
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		  <h3> Soft Skills </h3>
 			<ul>
 				<li class="list_square"> Autonomie </li>
 				<li class="list_square"> Esprit d'équipe </li>
@@ -173,7 +245,20 @@
 				<li class="list_square"> Créativité </li>
 			</ul>
 		</div>
-		</div>
+		
+		<form>
+		<script>
+		function openTab(tabName) {
+		  var i, x;
+		  x = document.getElementsByClassName("containerTab");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		  }
+		  document.getElementById(tabName).style.display = "block";
+		}
+		</script>
+		</form> 
+		</div> 
 		
 	<h2> Projets </h2>
 		<h3> Jeu en Python </h3>
@@ -207,6 +292,7 @@
 		<li> &#9742; Mon numéro de téléphone: +33 6 05 38 22 77 </li>
 		<li> &#9993; Mon e-mail: e.m.lobodzinska@gmail.com </li>
 		</ul>
-	
+		
+	</div>
 </body>
 </html>
