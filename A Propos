@@ -1,0 +1,97 @@
+<html>
+<head> 
+	<title> A Propos </title>
+	<link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+<div class="APropos">
+	<h2> A propos </h2>
+	<div class="row">
+	  <div class="column" onclick="openTab('b1');" >Presentation</div>
+	  <div class="column" onclick="openTab('b2');" >Competences</div>
+	  <div class="column" onclick="openTab('b3');" >Langues</div>
+	  <div class="column" onclick="openTab('b4');" >Soft Skills</div>
+		</div>
+		<!-- The expanding grid (hidden by default) -->
+		<div id="b1" class="containerTab" >
+		  <!-- If you want the ability to close the container, add a close button -->
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		  <h3> Présentation   </h3>
+		<p> Actuellement étudiante en deuxième année de licence MIASHS avec un renforcement en informatique, mon objectif est d'intégrer un master MIAGE afin d'approfondir mes compétences 
+		et connaissances dans le domaine de l'informatique. Ma volonté d'évolution se concrétise par l'acquisition d'une expérience pratique à travers des stages, des périodes en alternance, ainsi que 
+		la participation à des projets concrets. Je suis déterminée à enrichir mon parcours académique par une mise en pratique régulière, consolidant ainsi mes aptitudes professionnelles et ma compréhension
+		approfondie des enjeux informatiques contemporains.  </p>
+		</div>
+
+		<div id="b2" class="containerTab" >
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		  <h3> Compétences </h3>
+			<ul>
+				<li> <b>Python</b> - des bases de langage de programmation Python; 
+				<br> création et utilisation des différents fonctions; utilisation des boucles for, while mais aussi des conditions if, elif, else, utilisation des listes, ensembles, dictionnaires. 
+				<br> Exemples des fonctions: nombres paires et impaires, travail sur les matrices, travail sur des fichiers (ajout du texte)
+				<br> Création d'un jeu simple dans le terminal</li>
+				<li> <b> Java </b> - des bases de langage de programmaion Java;
+				<li> <b>HTML </b> - des bases de la création d'une site web avec HTML; 
+				<br> ajouter des photos, liens, création des tableaux, listes, apparence de la site web. 
+				<li> <b> CSS </b> - des bases de la mise au jour avec CSS; 
+				<br> changement des couleurs des polices, de fond, manipulation des bordures, aligner du textes, changement de grandeur du texte, images </li>
+				<li> <b> JavaScript </b> - des bases de langage de programmation JavaScript;
+			</ul>
+		</div>
+
+		<div id="b3" class="containerTab" >
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		  <h3> Langues </h3>
+				<table> 
+					<tr> 
+						<td> <img class="drapeaux" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Flag_of_Poland.svg/220px-Flag_of_Poland.svg.png">
+						<td> <img class="drapeaux" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAACHCAMAAADXwM4PAAAAYFBMVEXIEC7///8BIWnYV2z43+PPMErut8Djh5b99/jS2OWzvdIeOnoZNneirsjY3ehGXZI+Vo309fmAkLQHJm1wgqrKFzXrp7LNJD/nl6T77/Hgd4jTP1fcZ3rURV3zy9H00ddyXc5nAAAEFUlEQVR4nO2d2XLaQBBFh3jPauItjhP7//8yZUQUNJt6uXcgVX2fXAam57SOEWgZp7PzTSNfv31wZR4otTM/x1fq9mY/zONTVuDiMqWHq+sW48dP/wXh5y/7Qd5+Z8O/s02cLcTt97uTJ7y7305DPP/MR9/5efAjWtUxhD1BD6szVB1B2Bd0WR2vKp9wTdC8OlpVOuGqoEV1sKpkwlnQ15ds0CVHm30Zg6pUQpGg1epAVZmEMkGn6v1NvIhSVR6hVNCpuqALc7b3GlVZhHJB94TCJ07RqEoiVAj6l7C3uywjV5VCKNjF1wjF/XiP+F2VQKgUdKquf8nm5vZIhFpBdxsk6Tf7RqgqmtA402TsjEBVLKFF0N0bY/K8eCChfTMkjwDDCD3zS+4e8Ql9jiXMMExCZ/PTv5HQqmII3bNKh6NhVUUQAsxK6AGhhIiWp2xMoKpuQsxcckKgqk5ClE8lIWxoHyGs0RVClB4eQuAfS5UQ00E7IfQNr0GIKGImxO60WoQAUYyE6A8ebUJ3L02E+A+PPUJnOQsh4QtAl9CnjJ6Q8iVuhdDTVS0h6Yv4KqG9sJKQdTBlndAsj4qQd0BMQmjsr4qQIqiC0KaqhlDfQOmBaSGhUVUdIefkgpjQpqqCkHWCSEFoVlVEyBBUTWhVVUJIEdRAaFNVQpj9HniyPX83Y0RCSKw+okYQcquPqBGE3OojagQht/qIGkF4rOqRSCQSiUQikUgkEolEIpFIJBKJRE4rxz1zMKL6iBpByK0+okYQcquPqBGE3OojagQht7r12sQi52et2RsILy+yJz792D+ivzZR9ez5+tIi11cP2ZxePIS18V73DxGvL52vEdb03EhYcSL9ep4eoV0jrBB0noyDEKWq/lr9Ih2hfIQYVbX3W2g67SaEqKq8Z0YzBRWhoYHAe2ZMglrve9LVgBCaBPXcu1bEp6r8/kN1YSWhvZUuQo88WkJfNRuhr6t6Qoqqonu5beUshARVBffjFxEqYyLEq7q6poK9l0ZCtKpr62I4ipgJsar21zYpohHFTghVtbc+jbODHkKgqp01hrxD+whhjW6uE1VErYeTEDWXxlpfzr5hCDE+1ddrcwwIJUS0vLbmXhHbrhZBCJhVuW6ivVsUQrdZxdqXtmGYhM7mZ+uXFnF8bYER+ua3WIPW1KMRhB7HEu/wAZTQvhkS7xAQltCsajJ05vjreRfp2NY6Jgs4FIsnNKlaJ4QcTicQWlStEmJOiVAI9apWCDuCntb/t5BtmoIQd2qSRahUNScEnl7mEepUXXnYdt6VTqhRtb+JjYLyCRWqttkdgo4gFKta/eUuDkHHEApVrW7Y5BR0EKFM1Zx4ilPQYYQSVTcMQQcSrqtKEXQk4aqqpaCPfkHHEvZV/QPzY7HaZZwqzgAAAABJRU5ErkJggg==">
+						<td> <img class="drapeaux" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAACWCAMAAAAfSh8xAAAACVBMVEUAJlT////OESaBoDijAAAAoUlEQVR4nO3PMQEAAAgDoGn/0IZwJzQg6Zme7SkGDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDR8OvdOD1wQ8tBkAAAAASUVORK5CYII=">
+						<td> <img class="drapeaux" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Flag_of_Spain.svg/220px-Flag_of_Spain.svg.png" >
+					</tr>
+					<tr>
+						<td> Polonais </td>
+						<td> Anglais </td>
+						<td> Français  </td>
+						<td> Espagnol </td>
+					</tr>
+					<tr>
+						<td> Langue Maternelle </td>
+						<td> Niveau C1 </td>
+						<td> Niveau B2 </td>
+						<td> Débutante  </td>
+					</tr>
+						
+				</table>
+		</div>
+		
+		
+		<div id="b4" class="containerTab" >
+		  <span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+		  <h3> Soft Skills </h3>
+			<ul>
+				<li class="list_square"> Autonomie </li>
+				<li class="list_square"> Esprit d'équipe </li>
+				<li class="list_square"> Ponctualité </li>
+				<li class="list_square"> Curiosité </li>
+				<li class="list_square"> Résolution des problèmes </li>
+				<li class="list_square"> Créativité </li>
+			</ul>
+		</div>
+		
+		<form>
+		<script>
+		function openTab(tabName) {
+		  var i, x;
+		  x = document.getElementsByClassName("containerTab");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		  }
+		  document.getElementById(tabName).style.display = "block";
+		}
+		</script>
+		</form> 
+</div> 
+</body>
+</html>
