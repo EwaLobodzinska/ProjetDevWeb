@@ -1,0 +1,31 @@
+<html>
+<head> 
+	<title> A Propos </title>
+	<link rel="stylesheet" href="Portfolio.css">
+</head>
+<body>
+<h2> Diplômes </h2>
+		<h3> Education </h3>
+		<ul class="diplomes_list">
+			<li> <b> 2022- maintenant: </b> Etudiante en MIASHS (Mathématiques et Informatiques Appliques en sciences humaines et sociales) 
+			à Université Paris 1 Panthéon-Sorbonne </li>
+			<li> <b> Janvier 2023: </b> Certification PIX </li>
+			<li> <b> Mai 2022: </b> Bacculerat </li>
+			<li> <b> 2019-2022: </b> II Lycée d'Adam Mickiewicz avec des départements bilingues à Gdynia, Pologne
+			<br> Profil bilingue avec la spécialité en mathématiques, physiques et géographie </li>
+		</ul>
+		<h3> Experience </h3>
+		<ul class="diplomes_list">
+			<li> <b> L'été 2021 et 2022: </b> Assistante dans l'entreprise Elektro-Plus à Gdynia. 
+			<br> L'expérience ou j'avais pour la tâche d'organiser et de mettre à jour les archives. En plus, j’aidais au travail 
+			de bureau et dans tenue de livre compte ou j'ai appris des bases.   </li> <br>
+			<li> <b> 2015-2020: </b> Scoute, responsable de groupe des filles.
+			<br> Après  gagner l'expérience et connaissances en scoutisme je devenais une responsable de groupe de 6 filles. 
+			Je me suis occupée d'organisation des rencontres chaque semaine en manière intéressante et éducative. J'étais responsable 
+			de partager tout ce que je sais et encore plus dans les aspects d'histoire de scoutisme mais aussi d'histoire générale, 
+			des symboles cruciaux. Mon but était de développer des compétences générales de mon groupe.  </li>
+		</ul>
+	
+</div> 
+</body>
+</html>
