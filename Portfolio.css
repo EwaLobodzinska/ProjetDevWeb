@@ -1,22 +1,20 @@
 body{
-	background-color: #f2f9ed; /*#F8FFFF;*/
+	background-color: #f2f9ed; 
 	font-family: Garamond;
 	font-size: 20px;
 }
 		
-.frontPage {
+.menu {
 	width: 100%;
-	height: 100%;
+	height: 8.7%
 	background: url("VanGogh.jpg") fixed;
-	position: relative;
-	text-align: center;	
-	color: white;
+	position: fixed;
 }
 
 .image{
 	opacity:0.8;
 	width: 100%;
-	height: 100%;
+	height: 10%;
 	object-fit: cover;
 } 
 				
@@ -67,12 +65,26 @@ body{
 	color: white;
 }
 
-		
-			
-		
-		
+h2{
+	padding-top: 60px;
+}		
 		
 /* The grid: Three equal columns that floats next to each other */
+.row{
+	margin-left:25%;
+	margin-top: 40px;
+} 
+aside {
+	width: 25%;
+	float: left;
+}
+aside img{
+	width: 250px;
+	height: 270px;
+	margin-left: 20px;
+	border-radius: 200px;
+} 
+
 .column {
 	float: left;
 	width: 25%;
@@ -89,9 +101,14 @@ body{
 	display: none;
 	background: #eeedf9; 
 	padding: 20px;
-	border: 1px blue solid;
+	border: 1.2px solid #0000ab;
 	border-radius: 10px;
+	margin-left: 25%;
 }
+
+#b1 {
+	display:block;
+} 
 
 /* Clear floats after the columns */
 .row:after {
@@ -103,24 +120,13 @@ body{
 /* Closable button inside the image */
 .closebtn {
 	float: right;
-	color: white;
+	color: black;
 	font-size: 35px;
 	cursor: pointer;
 }
+				
 		
-		
-		
-		
-.pageBorder p, table{
-	background: #eeedf9; 
-	padding: 20px;
-	border: 1px blue solid;
-	border-radius: 10px;
-	list-style-position: inside;
-}
-		
-		
-table{
+.langues{
 	width: 700px;
 	text-align: center;
 	border-spacing: 15px;
@@ -132,12 +138,57 @@ table{
 	height: 100;
 	width: 150;
 }
+
 		
 .list_square{
 	list-style-type: square;
 }
-			
-.diplomes_list {
-	list-style-type: circle;
+
+
+
+.diplomes{
+	background-color:#f3f2fa;
+} 
+
+.diplomes_table{
+	width: 90%;
+	font-family: Garamond;
+	font-size: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align:center;
+	border-collapse: separate;
 }
+
+
+
+.icon{
+	width: 20%;
+	vertical-align: bottom;
+	text-align: center;
+}	
+.date{
+	vertical-align:top;
+
+}
+
+.text_left, .text_right, .text_experience{
+	padding: 30px;
+	text-align: center;
+	border-radius: 10px;
+	background-color:#e7f4e3;
+	border: 1.2px solid #0000ab;
+	
+}
+
+.text_left, .text_right{
+	width: 40%;	
+}	
+
+.text_experience{
+	width: 60%;
+}
+
+
+			
 		
