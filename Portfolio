@@ -405,5 +405,73 @@
 		</ul>
 		
 	</div>
+	<H2>Contactez moi!</h2>
+    <form method="get" action="">
+        <p>
+                <fieldset>
+                    <legend>Vos coordonnées</legend>
+                    <label for ="Nom">Nom:</label>
+                    <input type="text" id="Nom" name="Nom" placeholder="Ex.: Dupont" 
+                    required >
+                    <br>
+                    <label for ="Prénom">Prénom:</label>
+                    <input type="text" id="Prénom" name="Prénom" placeholder="Ex.: Alex"
+                    required >
+                    <br>
+                    <label for ="Mail">Adresse e-mail:</label>
+                    <input type="text" id="Mail" name="Mail" placeholder="Ex.: alexdupont@gmail.com"
+                    required >
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Votre message</legend>
+                <label for ="text">Objet:</label>
+                <input type="Objet" id="Objet" name="Objet" 
+                required>
+                <br>
+                <label for ="Message">Message:</label>
+                <textarea type="Message" id="Message" name="Message" 
+                required></textarea>
+               <input type="submit" onclick="sendMessage()" value="Envoyer">
+                </fieldset>
+    
+        </p>
+    </form>
+<p>Je vous recontacte bientôt!</p>
+
+<script>
+    function verifierAdresseEmail(email) {
+      var atIndex = email.indexOf('@');
+      if (atIndex == -1 || email.indexOf('@', atIndex + 1) != -1) {
+        return false; 
+      }
+
+      var validExtensions = ['.fr', '.com', '.org'];
+      var isValidExtension = validExtensions.some(function (extension) {
+        return email.endsWith(extension);
+      });
+
+      return isValidExtension;
+    }
+
+    function sendMessage() {
+      var prenom = document.getElementById('Prénom').value;
+      var nom = document.getElementById('Nom').value;
+      var mail = document.getElementById('Mail').value;
+      var objet = document.getElementById('Objet').value;
+      var message = document.getElementById('Message').value;
+
+      if (!verifierAdresseEmail(mail)) {
+        alert("Veuillez entrer une adresse e-mail valide.");
+        return;
+      }
+
+      if (prenom && nom && mail && objet && message) {
+        alert("Votre message a bien été envoyé");
+      } else {
+        alert("Veuillez remplir tous les champs du formulaire.");
+      }
+    }
+  </script>
 </body>
 </html>
